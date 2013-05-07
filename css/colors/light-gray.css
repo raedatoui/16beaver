@@ -1,0 +1,41 @@
+/* line 1, ../../homepagecss/sass/colors/gray.scss */
+body {
+  background-color: #cccccc;
+}
+
+/* line 8, ../../homepagecss/sass/colors/gray.scss */
+header #bottom_strip ul li a:hover {
+  color: #f612fe;
+}
+/* line 12, ../../homepagecss/sass/colors/gray.scss */
+header #bottom_strip ul .current-menu-item a {
+  color: #f612fe;
+}
+
+/* line 19, ../../homepagecss/sass/colors/gray.scss */
+#main .content {
+  border-bottom: thin solid #cccccc;
+}
+/* line 22, ../../homepagecss/sass/colors/gray.scss */
+#main .last {
+  border-bottom: none;
+}
+/* line 26, ../../homepagecss/sass/colors/gray.scss */
+#main #page-container #left-bar {
+  border-right: thin solid #cccccc;
+}
+/* line 29, ../../homepagecss/sass/colors/gray.scss */
+#main #page-container #sidebar {
+  border-left: thin solid #cccccc;
+}
+/* line 55, ../../homepagecss/sass/colors/blog.scss */
+::-moz-selection {
+  background: #f612fe;
+  text-shadow: none;
+}
+
+/* line 56, ../../homepagecss/sass/colors/blog.scss */
+::selection {
+  background: #f612fe;
+  text-shadow: none;
+}
