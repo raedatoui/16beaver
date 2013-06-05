@@ -37,6 +37,6 @@ header #bottom_strip ul .current-menu-item a {
 
 /* line 35, ../../homepagecss/sass/colors/gray.scss */
 ::selection {
-  background: #68634C;
+  background: #ccc;
   text-shadow: none;
 }

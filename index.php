@@ -15,10 +15,10 @@ get_header();
 			<div class="post">
 				<small class="date"><b><?php the_time('m.d.Y') ?></b></small>
 				<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-				<small><b>Topic(s):</b> <?php the_category(', ') ?> <?php the_tags(' | <b>Tags:</b> ', ', ', ''); ?> <?php if ( $user_ID ) :
-				?> | <b>Modify:</b> <?php edit_post_link(); ?> <?php endif; ?>| <?php comments_popup_link('No Comments &#187;this page in the codex', '1 Comment &#187;', '% Comments &#187;'); ?></small>
-				<?php echo "<p>".custom_trim_excerpt(100) . "</p>"; ?>
-				<a href= "<?php the_permalink() ?>">[Continue Reading]</a>
+				<small>Topic(s): <?php the_category(', ') ?> <?php if ( $user_ID ) :
+				?> | <b>Modify:</b> <?php edit_post_link(); ?> <?php endif; ?></small>
+				<?php echo "<p>" . get_post_meta(get_the_ID(), "excerpt", true) . "</p>"; ?>
+
 			</div>
 			</div>
 			<?php comments_template(); ?>

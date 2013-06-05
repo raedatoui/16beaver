@@ -30,12 +30,12 @@ header #bottom_strip ul .current-menu-item a {
 }
 /* line 55, ../../homepagecss/sass/colors/blog.scss */
 ::-moz-selection {
-  background: #f612fe;
+  background: #ccc;
   text-shadow: none;
 }
 
 /* line 56, ../../homepagecss/sass/colors/blog.scss */
 ::selection {
-  background: #f612fe;
+  background: #ccc;
   text-shadow: none;
 }

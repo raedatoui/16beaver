@@ -2,8 +2,7 @@
 <div id="comments">
 
 
-<?php 
-
+<?php
 
 function my_fields($fields) {
 	$fields['author']	= '<p class="comment-form-author comment-form-row"><label for="author">Name*</label><input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>';
@@ -17,7 +16,7 @@ add_filter('comment_form_default_fields','my_fields');
 
 $comments = array(
 	'fields'               => apply_filters( 'comment_form_default_fields', $cfields ),
-	'comment_field'        => '<p class="comment-form-comment comment-form-row"><label for="comment">Articles/ Comments</label><br/><textarea id="comment" name="comment"></textarea></p>',
+	'comment_field'        => '<p class="comment-form-comment comment-form-row"><label for="comment">Comments</label><br/><textarea id="comment" name="comment"></textarea></p>',
 	'comment_notes_before' => '',
 	'comment_notes_after'  => '',
 	'id_form'              => 'commentform',
@@ -26,7 +25,7 @@ $comments = array(
 	'title_reply_to'       => __( 'Leave a Reply to %s' ),
 	'cancel_reply_link'    => __( 'Cancel reply' ),
 	'label_submit'         => __( 'Submit' ),
-);	
+);
 
 comment_form($comments); ?>
 

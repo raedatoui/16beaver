@@ -1,8 +1,6 @@
 <footer>
 	<div id="address">
-		<span>16 Beaver Street</span><br>
-		<span>4th Floor</span><br>
-		<span>New York, NY 10004</span>
+		<span>16 Beaver Street / 4th Floor / New York, New York 10004</span>
 	</div>
 </footer>
 

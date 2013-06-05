@@ -95,4 +95,5 @@ $mondays = wpmu_latest_post_links("/mondays/",1,365);
 	</div>
 	</div>
 </div>
+
 <?php get_footer(); ?>
