@@ -15,8 +15,12 @@ get_header();
 			<div class="post">
 				<small class="date"><b><?php the_time('m.d.Y') ?></b></small>
 				<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-				<small>Topic(s): <?php the_category(', ') ?> <?php if ( $user_ID ) :
-				?> | <b>Modify:</b> <?php edit_post_link(); ?> <?php endif; ?></small>
+				<small>
+				<?php if(in_category( 'uncategorized', get_the_ID()) == false) : ?>
+				Topic(s): <?php the_category(', ') ?> | <?php endif; ?>
+				<?php if ( $user_ID ) :?>
+				Modify: <?php edit_post_link(); ?> <?php endif; ?>
+				</small>
 				<?php echo "<p>" . get_post_meta(get_the_ID(), "excerpt", true) . "</p>"; ?>
 
 			</div>
