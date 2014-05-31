@@ -29,7 +29,36 @@ $events = wpmu_latest_post_links("/",3,10000);
     </div>
 
 
+    <div class="col col-xs-12 col-sm-6 col-md-3"><!-- dont touch -->
 
+      <h2>Upcoming and Recent</h2>
+      <?php
+      foreach($mondays as $article) { ?>
+      <h3><div class="thin_rule"><a href="<?= $article->post_url ?>"><?= $article->post_title?></a></div></h3>
+      <? } ?>
+      <div class="spacer"></div>
+
+      <h2>Events</h2>
+      <?php
+      foreach($events as $article) { ?>
+      <h3><div class="thin_rule"><a href="/events/<?= $article->post_name ?>"><?= $article->post_title?></a></div></h3>
+      <? } ?>
+      <div class="spacer"></div>
+
+      <h2>Articles</h2>
+      <?php
+      foreach($articles as $article) { ?>
+      <h3><div class="thin_rule"><a href="<?= $article->post_url?>"><?= $article->post_title?></a></div></h3>
+      <? } ?>
+      <div class="spacer"></div>
+
+      <h2>Journalisms</h2>
+      <?php
+      foreach($journalisms as $article) { ?>
+      <h3><div class="thin_rule"><a href="<?= $article->post_url?>"><?= $article->post_title?></a></div></h3>
+      <? } ?>
+      <div class="spacer"></div>
+    </div>
 
     <div class="col col-xs-12 col-sm-6 col-md-3">
       <h2>Seminars</h2>

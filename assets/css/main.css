@@ -436,6 +436,55 @@ header {
   width: 60px;
   vertical-align: middle; }
 
+#main ul {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0; }
+
+#main ul li {
+  font-size: 12px;
+  list-style-type: none;
+  border-bottom: thin solid #dedede;
+  padding: 0.5em 10px 0.5em 10px; }
+
+#main ul li a {
+  color: #6264ad; }
+
+#main ul li a:hover {
+  color: #f612fe; }
+
+#main ul ul {
+  margin: 1em 0 1em 0;
+  padding: 0 0 0 0px; }
+
+#main ul ul li.flexo-month-link {
+  width: 100%;
+  background: url("../images/list-icon.png") no-repeat left top;
+  background-size: 7px 7px;
+  list-style-type: none;
+  background-position: 14px 4px;
+  padding: 0px 0px 0.5em 24px;
+  vertical-align: middle;
+  border-bottom: thin solid #dedede;
+  cursor: pointer; }
+
+#main ul ul li.flexo-month-link.open {
+  background: url("../images/list-icon-dwn.png") no-repeat left top;
+  background-position: 14px 5px;
+  background-size: 7px 7px; }
+
+#main ul ul li.flexo-month-link:hover > a:first-child {
+  color: #f612fe; }
+
+#main ul ul ul {
+  margin: 1em 0;
+  padding: 0 0 0 0px; }
+
+#main ul ul ul li {
+  list-style-type: none;
+  background: none;
+  margin: 0.5em 0;
+  border: none; }
+
 .container {
   width: 100%;
   padding: 2em; }
@@ -587,55 +636,6 @@ footer #address {
   border-bottom: 1px solid #999;
   padding-bottom: 0.5em;
   font-size: 16px; }
-
-#main ul {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0; }
-
-#main ul li {
-  font-size: 12px;
-  list-style-type: none;
-  border-bottom: thin solid #dedede;
-  padding: 0.5em 10px 0.5em 10px; }
-
-#main ul li a {
-  color: #6264ad; }
-
-#main ul li a:hover {
-  color: #f612fe; }
-
-#main ul ul {
-  margin: 1em 0 1em 0;
-  padding: 0 0 0 0px; }
-
-#main ul ul li.flexo-month-link {
-  width: 100%;
-  background: url("../assets/images/list-icon.png") no-repeat left top;
-  background-size: 7px 7px;
-  list-style-type: none;
-  background-position: 14px 4px;
-  padding: 0px 0px 0.5em 24px;
-  vertical-align: middle;
-  border-bottom: thin solid #dedede;
-  cursor: pointer; }
-
-#main ul ul li.flexo-month-link.open {
-  background: url("../assets/images/list-icon-dwn.png") no-repeat left top;
-  background-position: 14px 5px;
-  background-size: 7px 7px; }
-
-#main ul ul li.flexo-month-link:hover > a:first-child {
-  color: #f612fe; }
-
-#main ul ul ul {
-  margin: 1em 0;
-  padding: 0 0 0 0px; }
-
-#main ul ul ul li {
-  list-style-type: none;
-  background: none;
-  margin: 0.5em 0;
-  border: none; }
 
 .thin_rule {
   width: 100%;

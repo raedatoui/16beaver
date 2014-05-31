@@ -1,5 +1,5 @@
 <?php
-  include('lib/linkify.php');
+  include('includes/linkify.php');
   global $blog;
   $blog = true;
   get_header();
