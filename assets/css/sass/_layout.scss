@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  padding: 2em;
+}
+
+
+#left-bar {
+  padding: 0;
+}
+
+#sidebar {
+  padding: 0;
+}
+
+#barcontent {
+  padding: 1em 0 0 0;
+}
+
+
+.col-xs-12.title {
+  padding: 0 !important;
+}
+
+.content.menu .col-sm-12, .content.menu .col-sm-6 {
+  padding-left: 0;
+}
+
+@media(max-width: 768px) {
+  .content.menu .col-sm-12, .content.menu .col-sm-6 {
+    padding: 0;
+  }
+  #left-bar {
+    border-right: none !important;
+  }
+  #sidebar, #leftbar {
+    float: left;
+  }
+  .container {
+    padding: 1em;
+  }
+}

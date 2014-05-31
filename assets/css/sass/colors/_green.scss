@@ -1,0 +1,21 @@
+body.green {
+  background-color: #399;
+
+  header .header-bottom ul li a:hover {
+    color: #399;
+  }
+  header .header-bottom ul .current-menu-item a {
+    color: #399;
+  }
+
+  ::-moz-selection {
+    background: #399;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #399;
+    text-shadow: none;
+  }
+
+}

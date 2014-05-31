@@ -1,0 +1,33 @@
+body.gray {
+  background-color: #68634C;
+
+  header .header-bottom ul li a:hover {
+    color: #68634C;
+  }
+  header .header-bottom ul .current-menu-item a {
+    color: #68634C;
+  }
+
+  #main .content {
+    border-bottom: thin solid #68634C;
+  }
+  #main .last {
+    border-bottom: none;
+  }
+  #main #page-container #left-bar {
+    border-right: thin solid #68634C;
+  }
+  #main #page-container #sidebar {
+    border-left: thin solid #68634C;
+  }
+
+  ::-moz-selection {
+    background: #68634C;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #ccc;
+    text-shadow: none;
+  }
+}

@@ -7,9 +7,8 @@
 </div>
 
 	<!-- this use for thre tiling of categories -->
-	<script defer src="<?=bloginfo('url')?>/wp-content/themes/homepage/js/libs/jquery.masonry.min.js"></script>
-	<script defer src="<?=bloginfo('url')?>/wp-content/themes/homepage/js/script.js"></script>
-
+	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script defer src="<?php echo bloginfo('url')?>/wp-content/themes/homepage/assets/js/script.min.js"></script>
 
 	<?php
 /*

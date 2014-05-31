@@ -1,0 +1,28 @@
+{
+  "name": "16-beaver-custom-theme",
+  "title": "16 Beaver Custom Theme",
+  "description": "16beavergroup.org wordpress theme",
+  "version": "0.1.0",
+  "homepage": "http://16beavergroup.org",
+  "author": {
+    "name": "Raed Atoui",
+    "email": "raed.atoui@gmail.com",
+    "url": "http://raedatoui.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-concat": "~0.1.2",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-sass": "~0.2.2",
+    "grunt-concat-css": "~0.3.1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "grunt-concat-css": "~0.3.1"
+  }
+}

@@ -1,0 +1,34 @@
+body.orange {
+  background-color: #F06509;
+
+  header .header-bottom ul li a:hover {
+    color: #F06509;
+  }
+  header .header-bottom ul .current-menu-item a {
+    color: #F06509;
+  }
+
+  #main .content {
+    border-bottom: thin solid #F06509;
+  }
+  #main .last {
+    border-bottom: none;
+  }
+  #main #page-container #left-bar {
+    border-right: thin solid #F06509;
+  }
+  #main #page-container #sidebar {
+    border-left: thin solid #F06509;
+  }
+
+  ::-moz-selection {
+    background: #F06509;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #F06509;
+    text-shadow: none;
+  }
+
+}

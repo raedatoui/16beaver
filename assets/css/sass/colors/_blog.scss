@@ -1,0 +1,39 @@
+body {
+  background-color: #dedede;
+
+  header .header-bottom ul li a:hover {
+    color: #f612fe;
+  }
+  header .header-bottom ul .current-menu-item a {
+    color: #f612fe;
+  }
+
+  #main .post a {
+    color: #6264ad;
+  }
+  #main .post a:hover {
+    color: #f612fe;
+  }
+  #main .content {
+    border-bottom: thin solid #dedede;
+  }
+  #main .last {
+    border-bottom: none;
+  }
+  #main #page-container #left-bar {
+    border-right: thin solid #dedede;
+  }
+  #main #page-container #sidebar {
+    border-left: thin solid #dedede;
+  }
+
+  ::-moz-selection {
+    background: #ccc;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #ccc;
+    text-shadow: none;
+  }
+}
