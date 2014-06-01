@@ -19,7 +19,8 @@
     "grunt-contrib-nodeunit": "~0.1.2",
     "grunt-contrib-watch": "~0.2.0",
     "grunt-contrib-sass": "~0.2.2",
-    "grunt-concat-css": "~0.3.1"
+    "grunt-concat-css": "~0.3.1",
+    "grunt-rsync": "~0.6.0"
   },
   "keywords": [],
   "dependencies": {

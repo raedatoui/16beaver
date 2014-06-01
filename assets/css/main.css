@@ -52,11 +52,16 @@ header {
       padding: 1em;
       background-color: white;
       display: inline-block; }
+      header .header-top .logo-container a:hover {
+        text-decoration: none; }
     header .header-top .logo {
-      background-image: url("../images/16beaver_logo.png");
       background-repeat: no-repeat;
-      width: 113px;
-      height: 22px; }
+      height: 22px;
+      line-height: 22px;
+      font-weight: 900;
+      font-size: 30px;
+      text-align: left;
+      color: black; }
   header .header-bottom {
     background-color: white;
     float: left;
@@ -518,7 +523,7 @@ header {
     padding: 1em; } }
 body {
   color: #000;
-  font-family: Courier New, Helvetica, Arial, sans-serif;
+  font-family: 'PT Serif', serif;
   margin: 0 auto;
   max-width: 1600px; }
 

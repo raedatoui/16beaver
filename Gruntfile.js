@@ -99,8 +99,6 @@ module.exports = function( grunt ) {
       },
     },
 
-
-
     watch: {
       sass: {
         files: ['assets/css/sass/**/*.scss'],
@@ -117,12 +115,44 @@ module.exports = function( grunt ) {
           debounceDelay: 500
         }
       }
+    },
+
+    rsync: {
+      options: {
+          args: ["--verbose"],
+          exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc', '.gruntjshintrc'],
+          recursive: true
+      },
+      dist: {
+        options: {
+          src: "./",
+          dest: "../dist"
+        }
+      },
+      staging: {
+        options: {
+          src: "./",
+          tasks: ['sass', 'cssmin', 'concat_css', 'jshint', 'concat', 'uglify'],
+          dest: "/srv/www/16beavergroup.org/public/wp-content/themes/homepage2",
+          host: "root@50.116.51.173",
+          syncDestIgnoreExcl: true
+        }
+      },
+      prod: {
+        options: {
+          src: "./",
+          tasks: ['sass', 'cssmin', 'concat_css', 'jshint', 'concat', 'uglify'],
+          dest: "/srv/www/16beavergroup.org/public/wp-content/themes/homepage",
+          host: "root@50.116.51.173",
+          syncDestIgnoreExcl: true
+        }
+      }
     }
 
   } );
 
   // Default task.
-
+  grunt.loadNpmTasks("grunt-rsync");
   grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'sass', 'cssmin'] );
 
   grunt.util.linefeed = '\n';

@@ -21,6 +21,7 @@
     ?>
   </title>
 
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo bloginfo('url')?>/wp-content/themes/homepage/assets/css/styles.min.css">
 
   <?php
@@ -60,7 +61,7 @@
   <div class="container">
     <header id="header">
       <div class="header-top">
-        <div class="logo-container"><a href="<?php echo network_home_url()?>"><div class="logo"></div></a></div>
+        <div class="logo-container"><a href="<?php echo network_home_url()?>"><div class="logo">16 BEAVER</div></a></div>
       </div>
 
       <div class="header-bottom">
