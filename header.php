@@ -21,6 +21,7 @@
     ?>
   </title>
 
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo bloginfo('url')?>/wp-content/themes/homepage/assets/css/styles.min.css">
 
   <?php

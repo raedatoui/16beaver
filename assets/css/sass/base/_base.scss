@@ -6,7 +6,8 @@
 }
 
 html, body {
-  font-family: Courier New, Helvetica, Arial, sans-serif;
+  // font-family: Courier New, Helvetica, Arial, sans-serif;
+  font-family: 'PT Serif', serif;
   color: $black;
   @include base-copy;
 }
