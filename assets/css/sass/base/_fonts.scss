@@ -1,0 +1,21 @@
+@mixin base-copy {
+  font-size: 14px;
+}
+@mixin small-copy {
+  font-size: 12px;
+}
+@mixin big-copy {
+  font-size: 16px;
+}
+@mixin tiny-copy {
+  font-size: 10px;
+}
+
+@mixin bold {
+  font-weight: 700;
+}
+
+$light-gray: #dedede;
+$black: #000;
+$hot-pink: #f612fe;
+$purple: #6264ad;

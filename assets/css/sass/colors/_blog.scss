@@ -8,11 +8,24 @@ body {
     color: #f612fe;
   }
 
+  #sidebar ul li a {
+    color: #6264ad;
+  }
+  #sidebar ul li a:hover {
+    color: #f612fe;
+  }
+
   #main .post a {
     color: #6264ad;
   }
+  #main .post h1 a {
+    color: #000;
+  }
   #main .post a:hover {
     color: #f612fe;
+  }
+  #main .post h1 a:hover {
+    text-decoration: none;
   }
   #main .content {
     border-bottom: thin solid #dedede;

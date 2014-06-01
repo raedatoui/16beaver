@@ -12,6 +12,10 @@
 .em-calendar tbody tr td {
   height: 100px;
 }
+.em-calendar tbody tr td li a {
+  color: #000;
+}
+
 .em-calendar tbody tr.days-names td {
   height: 30px;
   text-align: center;
@@ -19,13 +23,15 @@
   vertical-align: middle;
 }
 .em-calendar tbody tr td.eventful a {
-  color: #6264AB;
+  // color: #6264AB;
+  color: #000;
 }
 .em-calendar tbody tr td.eventless {
   color: #666;
 }
 .em-calnav-prev, .em-calnav-next {
-  color: #6264AB;
+  // color: #6264AB;
+  color: #000;
 }
 .em-calnav-prev:hover, .em-calnav-next:hover {
   color: #d2d2e8;
@@ -75,7 +81,7 @@
 
 
 
-#main .em-calendar  ul li {
+.em-calendar  ul li {
   border: none;
 }
 /* calendar */
@@ -100,7 +106,8 @@
 .em-calendar .next-month { display: none; }
 
 @media only screen and (max-width: 620px) {
-   .em-calendar.fullcalendar td {
+
+ .em-calendar.fullcalendar td {
     border: none;
     width: 100%;
   }

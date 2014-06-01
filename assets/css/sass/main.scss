@@ -5,8 +5,16 @@
  * Copyright (c) 2014 Raed Atoui
  * Licensed under the GPLv2+ license.
  */
-@import "clear";
-@import "style";
+@import "base/base";
+@import "base/clear";
+@import "base/fonts";
+@import "base/layout";
+
+@import "components/header";
+@import "components/calendar";
+@import "components/comments";
+@import "components/lists";
+
 @import "colors/blog";
 @import "colors/gray";
 @import "colors/green";

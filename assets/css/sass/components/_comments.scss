@@ -1,6 +1,8 @@
+@import "../base/fonts";
+
 #comments {
   padding: 0 1em;
-  font-size: 12px;
+  @include small-copy;
 }
 #commentform {
   width: 100%;
@@ -25,9 +27,11 @@
 #commentform .form-submit input {
   background-color: #666;
   border: none;
-  font-size: 12px;
+  @include small-copy;
   color: white;
-  text-align: left;
-  width: 60px;
-  vertical-align: middle;
+  text-align: center;
+  width: 70px;
+  height: 28px;
+  padding: 0;
+  line-height: 28px;
 }

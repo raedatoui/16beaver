@@ -1,8 +1,12 @@
+body {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
 .container {
   width: 100%;
   padding: 2em;
 }
-
 
 #left-bar {
   padding: 0;
@@ -16,13 +20,22 @@
   padding: 1em 0 0 0;
 }
 
-
 .col-xs-12.title {
   padding: 0 !important;
 }
 
 .content.menu .col-sm-12, .content.menu .col-sm-6 {
   padding-left: 0;
+}
+
+#page-container {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 1em;
+}
+#page-container .last {
+  margin-bottom: 0px;
 }
 
 @media(max-width: 768px) {

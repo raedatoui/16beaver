@@ -1,0 +1,163 @@
+@import "fonts";
+
+@mixin opacity($opacity) {
+  filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})");
+  opacity: $opacity;
+}
+
+html, body {
+  font-family: Courier New, Helvetica, Arial, sans-serif;
+  color: $black;
+  @include base-copy;
+}
+
+ p {
+  @include base-copy;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+h3 {
+  @include base-copy;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  height: auto;
+  min-height: 30px;
+  @include opacity(0.85);
+  background-color: white;
+  float: left;
+  width: 100%;
+  margin-top: 1px;
+}
+footer #address {
+  color: #909090;
+  padding-left: 1em;
+  padding-top: 7px;
+  @include small-copy;
+}
+
+#main {
+  float: left;
+  width: 100%;
+  background-color: white;
+}
+#main h1 {
+  @include bold;
+}
+#main .content {
+  width: 100%;
+  padding: 1em;
+  display: inline-block;
+  &.home {
+    padding: 1em 0;
+  }
+  .title {
+    @include big-copy;
+    @include bold;
+  }
+ .date {
+    color: #999;
+    @include base-copy;
+  }
+  h1 {
+    @include base-copy;
+    a {
+      color: $black;
+    }
+  }
+ .navigation {
+    width: 100%;
+    float: left;
+    height: 60px;
+  }
+}
+#main .last {
+  border-bottom: none;
+}
+#main .catlist {
+  padding: 1em;
+  li {
+    list-style-type: none;
+    padding: 0.5em 0 0.5em 0;
+    border: none;
+    @include small-copy;
+  }
+}
+
+
+#barcontent h2 {
+  padding: 0 1em;
+}
+#barcontent .sidetitle {
+  border-bottom: 1px solid #999;
+  padding-bottom: 0.5em;
+  font-size: 16px;
+}
+
+.thin_rule {
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+  overflow: hidden;
+  padding-bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @include base-copy;
+}
+.thin_rule a {
+  color: #6264ad;
+}
+.thin_rule a:hover {
+  color: #d2d2e8;
+}
+
+.col1 h2 {
+  @include small-copy;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.col1 h2 .caption {
+  color: #909090;
+}
+.col h2 {
+  @include small-copy;
+  color: #909090;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.col h3 {
+  @include small-copy;
+  color: #6264ad;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.col h3 .date {
+  @include tiny-copy;
+  color: #909090;
+}
+
+.pagetitle {
+  @include bold;
+  @include base-copy;
+}
+
+.alignleft {
+  float: left;
+  @include small-copy;
+}
+.alignright {
+  float: right;
+  @include small-copy;
+}
+
+.subtitle {
+  @include small-copy;
+  color: #999;
+}
