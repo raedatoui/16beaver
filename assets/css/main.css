@@ -241,7 +241,8 @@ header {
       font-weight: 900;
       font-size: 1.6em;
       text-align: left;
-      color: black; }
+      color: black;
+      word-spacing: -6px; }
   header .header-bottom {
     background-color: white;
     float: left;
@@ -391,10 +392,6 @@ header {
 /* calendar */
 .em-calendar {
   width: 100%;
-  font-size: 0.75em;
-  /*12*/
-  line-height: 1.25em;
-  /*15*/
   border-collapse: collapse;
   border-spacing: 0; }
 
@@ -413,7 +410,7 @@ header {
 
 .em-calendar .day {
   margin: 1em 0 .5em 0;
-  font-weight: bold; }
+  font-weight: 700; }
 
 .em-calendar .eventful {
   display: block; }
@@ -668,6 +665,30 @@ header {
   background: none;
   margin: 0.5em 0;
   border: none; }
+
+#main .sharing ul ul {
+  margin: 10px 0;
+  padding: 0 1em; }
+
+#main .sharing ul ul li.flexo-month-link {
+  width: 100%;
+  background: url(../images/list-icon.png) no-repeat left top;
+  background-size: 9px 11px;
+  list-style-type: none;
+  background-position: 0 4px;
+  padding: 0 0 .5em 12px;
+  vertical-align: middle;
+  border-bottom: thin solid #dedede;
+  cursor: pointer; }
+  #main .sharing ul ul li.flexo-month-link a {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase; }
+
+#main .sharing ul ul li.flexo-month-link.open {
+  background: url("../images/list-icon-dwn.png") no-repeat left top;
+  background-position: 0 5px;
+  background-size: 9px 9px; }
 
 body {
   background-color: #dedede; }

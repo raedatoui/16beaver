@@ -85,7 +85,7 @@
   border: none;
 }
 /* calendar */
-.em-calendar { width: 100%; font-size: 0.75em;/*12*/ line-height: 1.25em;/*15*/ border-collapse: collapse; border-spacing: 0; }
+.em-calendar { width: 100%;  border-collapse: collapse; border-spacing: 0; }
 
 .em-calendar th { text-align: left; }
 .em-calendar th span { display: none; }
@@ -94,7 +94,7 @@
 .em-calendar td,
 .em-calendar th { display: none; }
 
-.em-calendar .day { margin: 1em 0 .5em 0; font-weight: bold; }
+.em-calendar .day { margin: 1em 0 .5em 0; @include bold; }
 
 .em-calendar .eventful { display: block; }
 

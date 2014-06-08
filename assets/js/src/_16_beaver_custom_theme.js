@@ -74,7 +74,7 @@ var checkFlexo = function() {
 
 var onFlexo = function(event) {
   $(this).parent().toggleClass('open');
-  if($(this).parent().hasClass('open') || $(this).parent().hasClass(year)) {
+  if($(this).parent().hasClass('open') || $(this).parent().hasClass(year) || $(this).hasClass('share')) {
     $(this).next().slideToggle('fast', function(){
       window.resize();
     });

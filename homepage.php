@@ -62,7 +62,7 @@ $events = wpmu_latest_post_links("/",3,10000);
 
     <div class="col col-xs-12 col-sm-6 col-md-3">
       <h2>Seminars</h2>
-      <h3><div class="thin_rule"><a href="/common/">A Common(s) Course: Commoning the City & Withdrawing from the Community of Money</a><br><span class="subtitle">ongoing</span></div></h3>
+      <div class="thin_rule"><h3><a href="/common/">A Common(s) Course: Commoning the City & Withdrawing from the Community of Money</a><br><span class="subtitle">ongoing</span></h3></div>
       <h3><div class="thin_rule"><a href="/everything/">Welcome to the New Paradigm or Crisis of Everything Everywhere</a><br><span class="subtitle">Jan. 7-15, 2012</span></div></h3>
       <h3><div class="thin_rule"><a href="/silvia_george_david/">Beyond Good and Evil Commons</a><br><span class="subtitle">JAug. 18-20, 2011</span></div></h3>
       <h3><div class="thin_rule"><a href="/farocki/">Something Becomes Visible</a></div></h3>

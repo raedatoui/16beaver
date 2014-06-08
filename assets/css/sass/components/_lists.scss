@@ -42,3 +42,29 @@
   margin: 0.5em 0;
   border: none;
 }
+
+#main .sharing ul ul {
+  margin: 10px 0;
+  padding: 0 1em;
+}
+#main .sharing ul ul li.flexo-month-link{
+  width: 100%;
+  background: url(../images/list-icon.png) no-repeat left top;
+  background-size: 9px 11px;
+  list-style-type: none;
+  background-position: 0 4px;
+  padding: 0 0 .5em 12px;
+  vertical-align: middle;
+  border-bottom: thin solid #dedede;
+  cursor: pointer;
+  a {
+    @include base-copy;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+#main .sharing  ul ul li.flexo-month-link.open {
+  background: url("../images/list-icon-dwn.png") no-repeat left top;
+  background-position: 0 5px;
+  background-size: 9px 9px;
+}

@@ -119,7 +119,7 @@ module.exports = function( grunt ) {
 
     rsync: {
       options: {
-          args: ["--verbose"],
+          args: ['--verbose'],
           exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc', '.gruntjshintrc'],
           recursive: true
       },
