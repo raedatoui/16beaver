@@ -280,7 +280,7 @@ header {
 #menu-main-menu {
   margin: 0; }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   header .header-bottom .menu {
     padding: 0 0 0 1em;
     float: left; }
@@ -672,11 +672,12 @@ header {
 
 #main .sharing ul ul li.flexo-month-link {
   width: 100%;
-  background: url(../images/list-icon.png) no-repeat left top;
-  background-size: 9px 11px;
+  background: url(../images/list-icon-dwn.png) no-repeat left top;
+  background-size: 9px 9px;
   list-style-type: none;
-  background-position: 0 4px;
-  padding: 0 0 .5em 12px;
+  background-position: 50px 2.5px;
+  padding: 0 0 6px 0;
+  line-height: 1.1;
   vertical-align: middle;
   border-bottom: thin solid #dedede;
   cursor: pointer; }
@@ -686,8 +687,8 @@ header {
     text-transform: uppercase; }
 
 #main .sharing ul ul li.flexo-month-link.open {
-  background: url("../images/list-icon-dwn.png") no-repeat left top;
-  background-position: 0 5px;
+  background: url(../images/list-icon-dwn.png) no-repeat left top;
+  background-position: 50px 2.5px;
   background-size: 9px 9px; }
 
 body {

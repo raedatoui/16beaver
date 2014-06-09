@@ -3,7 +3,7 @@
 ?>
 <div class="<?php echo  $klass2 ?> col" id="sidebar">
   <div id="barcontent">
-    <h2 class="sidetitle">Join</h2>
+
     <h2><div class="thin_rule arrow-link"><a href="<?php echo network_home_url()?>/contact">POST / CONTACT</a></div></h2>
     <h2><div class="thin_rule arrow-link"><a href="<?php echo network_home_url()?>/about#mondays">SUBSCRIBE TO OUR NEWSLETTER</a></div></h2>
 

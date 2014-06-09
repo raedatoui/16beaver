@@ -147,13 +147,40 @@ module.exports = function( grunt ) {
           syncDestIgnoreExcl: true
         }
       }
+    },
+
+    sshexec: {
+      staging: {
+        command: ['cd /srv/www/16beavergroup.org/public/wp-content/themes/homepage2', 'chown www-data:www-data *', 'ls -al'].join("&&"),
+        options: {
+          host: '50.116.51.173',
+          username: 'root',
+          password : 'entissar151'
+        }
+      },
+      prod: {
+        command: ['cd /srv/www/16beavergroup.org/public/wp-content/themes/homepage', 'chown www-data:www-data *', 'ls -al'].join("&&"),
+        options: {
+          host: '50.116.51.173',
+          username: 'root',
+          password : 'entissar151'
+        }
+      }
     }
 
   } );
 
   // Default task.
   grunt.loadNpmTasks("grunt-rsync");
-  grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'sass', 'cssmin'] );
+  grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-ssh');
+
+  grunt.registerTask('shell-test', ['sshexec:staging']);
+
+  grunt.registerTask( 'staging', ['jshint', 'concat', 'uglify', 'sass', 'cssmin', 'rsync:staging', 'sshexec:staging'] );
+  grunt.registerTask( 'prod', ['jshint', 'concat', 'uglify', 'sass', 'cssmin', 'rsync:prod', 'sshexec:prod'] );
+
+  // grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'sass', 'cssmin'] );
 
   grunt.util.linefeed = '\n';
 };
